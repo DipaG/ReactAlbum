@@ -9,13 +9,15 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Header from './Components/Header';
+import AlbumList from './Components/AlbumList';
 
 export default class App extends Component {
   render() {
     return (
-      
-          <Header></Header>
-      
+      <View style = {{flex : 1}}>
+          <Header headerText = "Album"></Header>
+          <AlbumList/>
+      </View>
     );
   }
 }
